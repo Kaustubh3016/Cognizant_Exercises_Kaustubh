@@ -69,6 +69,8 @@ public class Ecommerce {
         else
             System.out.println("Product not found.");
 
+        System.out.println("Time Complexity: O(n)");
+
         Product[] sortedProducts = Arrays.copyOf(products, products.length);
         Arrays.sort(sortedProducts, Comparator.comparingInt(p -> p.productId));
 
@@ -80,6 +82,7 @@ public class Ecommerce {
         else
             System.out.println("Product not found.");
 
+        System.out.println("Time Complexity: O(log n)");
         sc.close();
     }
 }
